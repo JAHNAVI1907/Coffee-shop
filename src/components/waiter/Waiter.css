@@ -1,0 +1,94 @@
+.waiter-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0fff0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.waiter-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3f5a3f;
+}
+
+.waiter-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.waiter-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4f6b4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.waiter-container button:hover {
+  background-color: #3f5a3f;
+}
+
+
+.order-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.order-card {
+  background-color: #fff;
+  border-left: 6px solid #d88c8c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.order-card h3 {
+  color: #6b4f4f;
+  margin-bottom: 10px;
+}
+
+.order-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.order-card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.order-card li {
+  margin-bottom: 5px;
+}
+
+.serve-button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #f4c542;
+  color: #4b2e2e;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.serve-button:hover {
+  background-color: #e0b030;
+}
+
+
+

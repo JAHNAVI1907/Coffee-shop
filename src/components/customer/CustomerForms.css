@@ -1,0 +1,151 @@
+
+
+/* === Shared Panel Styling === */
+.panel-card {
+  background: linear-gradient(135deg, #b08968, #7f5539); /* warm beige to coffee brown */
+  backdrop-filter: blur(6px); /* frosted glass effect */
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 6px 16px rgba(197, 195, 124, 0.5);
+  transition: transform 0.3s ease;
+  max-width: 420px;
+  width: 100%;
+}
+
+.panel-card:hover {
+  transform: translateY(-4px);
+}
+
+/* === Headings === */
+.panel-card h2,
+.feedback-form h3,
+.issue-form h3 {
+  color: #f2ede7;
+  margin-bottom: 15px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* === Form Containers === */
+.feedback-form,
+.issue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* === Inputs and Textareas === */
+.feedback-form textarea,
+.issue-form textarea,
+.issue-form input,
+.feedback-form select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #4a3a3a;
+  color: #fff;
+  font-size: 0.95rem;
+  resize: none;
+  min-height: 100px;
+  
+}
+
+.feedback-form textarea:focus,
+.issue-form textarea:focus,
+.issue-form input:focus,
+.feedback-form select:focus {
+  outline: none;
+  background: #5c4433;
+  box-shadow: 0 0 8px #d4a574;
+}
+
+.feedback-form textarea:hover,
+.issue-form textarea:hover,
+.issue-form input:hover,
+.feedback-form select:hover {
+  background: #5c4433;
+}
+
+/* === Buttons === */
+.feedback-form button,
+.issue-form button {
+  background: linear-gradient(90deg, #6f4e37, #8b5e3c);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.feedback-form button:hover,
+.issue-form button:hover {
+  background: linear-gradient(90deg, #d4a574, #b5651d);
+  color: #ded6d6;
+  transform: scale(1.05);
+}
+
+/* === Rating Dropdown === */
+.feedback-form select {
+  cursor: pointer;
+}
+
+/* === Navigation Links === */
+.nav-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: #ebe6e1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* === Responsive Tweak === */
+@media (max-width: 600px) {
+  body {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .panel-card {
+    padding: 18px;
+    margin: 0 20px 30px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+
+/* === Full Page Wrapper for Centering === */
+.feedback-page {
+ /* image must be in public/images */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}

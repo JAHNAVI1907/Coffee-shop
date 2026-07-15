@@ -1,0 +1,71 @@
+.booking-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff8f0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgba(255, 248, 240, 0.9); /* slight transparency */
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5a3f3f;
+}
+
+.booking-container input,
+.booking-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.booking-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6b4f4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-container button:hover {
+  background-color: #5a3f3f;
+}
+
+
+/* Full background image for the page */
+
+.booking-bg {
+  background-image: url("http://localhost:3000/images/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.9);
+}
+
+.table-bg{
+  background-image: url("http://localhost:3000/images/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.9);
+}
+
+
