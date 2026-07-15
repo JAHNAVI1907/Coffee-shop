@@ -1,0 +1,13 @@
+package com.example.coffeeshopproject.Repository;
+
+import com.example.coffeeshopproject.Entity.Admin;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface AdminRepo extends JpaRepository<Admin, Long> {
+    Optional<Admin> findByEmail(String email);
+
+    // ✅ Add this method to support login
+    Optional<Admin> findByEmailAndPassword(String email, String password);
+}
